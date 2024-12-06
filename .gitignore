@@ -1,4 +1,4 @@
 US_youtube_trending_data.csv
 GB_youtube_trending_data.csv
-tfidf_vectorizer.pkl
+vectorizer.pkl
 random_forest_model.pkl
