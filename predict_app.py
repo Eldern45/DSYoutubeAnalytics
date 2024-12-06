@@ -7,13 +7,12 @@ import re
 # Load the trained model and vectorizer
 try:
     rf_model = joblib.load('random_forest_model.pkl')
-    vectorizer = joblib.load('tfidf_vectorizer.pkl')
+    vectorizer = joblib.load('vectorizer.pkl')
 except FileNotFoundError:
-    raise Exception("Model or Vectorizer file not found. Ensure 'random_forest_model.pkl' and 'tfidf_vectorizer.pkl' exist.")
+    raise Exception("Model or Vectorizer file not found. Ensure 'random_forest_model.pkl' and 'vectorizer.pkl' exist.")
 
 # Function to preprocess input text
 def preprocess_text(title, tags, description):
- 
     combined_text = f"{title} {tags} {description}"
     
     def clean_text(text):
@@ -40,11 +39,10 @@ def preprocess_text(title, tags, description):
     cleaned_text = clean_text(combined_text)
     return cleaned_text
 
-
 def predict_category():
     # Get user input
     title = title_entry.get()
-    tags = tags_entry.get()
+    tags = tags_entry.get("1.0", tk.END).strip()  # Ensure tags_entry is a tk.Text widget
     description = description_text.get("1.0", tk.END).strip()
     
     if not title and not tags and not description:
@@ -81,21 +79,21 @@ title_label.pack(pady=(20, 5))
 title_entry = ttk.Entry(root, width=70)
 title_entry.pack()
 
-# Tags Label and Entry
+# Tags Label and Text Box
 tags_label = ttk.Label(root, text="Video Tags (separated by commas or spaces):")
 tags_label.pack(pady=(20, 5))
-tags_entry = ttk.Entry(root, width=70)
+tags_entry = tk.Text(root, height=4, wrap='word')  # Ensure this is a tk.Text widget
 tags_entry.pack()
 
 # Description Label and Text Box
 description_label = ttk.Label(root, text="Video Description:")
 description_label.pack(pady=(20, 5))
-description_text = tk.Text(root, width=60, height=10, wrap='word')
+description_text = tk.Text(root, height=6, wrap='word')
 description_text.pack()
 
 # Predict Button
 predict_button = ttk.Button(root, text="Predict Category", command=predict_category)
-predict_button.pack(pady=20)
+predict_button.pack(pady=10)
 
 # Result Label
 result_label = ttk.Label(root, text="Predicted Category: ", foreground="blue", font=('Arial', 14, 'bold'))
