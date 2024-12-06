@@ -9,5 +9,5 @@ YouTube currently stands as one of the most popular platforms for video content 
 2. Press Ctrl + Shift + P and type _"Python: Create Environment"_ (functionality was checked with Python 3.12.6)
 3. VSCode will offer you to install dependencies from requirements.txt. If not, open the terminal and install them yourself with _pip install -r requirements.txt_.
 4. For running Jupyter notebook files, you should install the offered extensions. After that, select the kernel (your created .venv).
-5. To be able to run the prediction app, run all cells from the prediction.ipynb file. It will take 5-10 minutes. It will create _random_forest_model.pkl_, which is necessary for running the appliocation.
+5. To be able to run the prediction app, run all cells from the prediction.ipynb file. It will take 5-10 minutes. It will create _random_forest_model.pkl_, which is necessary for running the application.
 6. Congratulations, you are all set!
