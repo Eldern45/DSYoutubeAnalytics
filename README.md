@@ -2,8 +2,8 @@
 Analysing YouTube trends and training a video category prediction model
 
 ### TEAM:
-Timofei Šinšakov (Gr 7)
-Natalja Frantikova (Gr 4)
+Timofei Šinšakov (Gr 7)<br>
+Natalja Frantikova (Gr 4)<br>
 Andrei Potrebin (Gr 2)
 
 ### Motivation and goal
@@ -31,12 +31,15 @@ YouTube currently stands as one of the most popular platforms for video content 
 * prediction.ipynb - a notebook where the prediction model was trained, tuned (for finding the best hyperparameters), and tested.
 * comparison.ipynb - a notebook where trending videos from US and UK were compared. Contains tables where videos are ranked by different metrics (views, days in trends, likes), visualization of video categories and popular tags, binomial tests and more.
 * Goal3.ipynb - a notebook where temporal analysis of trends was conducted.
+
 Two JSON files from Kaggle which map each content category ID to the name of the category.
 * GB_category_id.json - for the categories of the UK video dataset. Technically it is redundant since all the categories here are also included in the US category JSON, and that additionally has one more category.
 * US_category_id.json - for the categories of the US video dataset.
+
 Files related to category prediction model
 * predict_app.py - a simple tkinter app where you can play around with the model. Enter the title, tags, and description of a hypothetical video and see what category the model predicts. Note that the tested accuracy is 85.7%, some categories are predicted more successfully than others, and there is some subjectivity in what category is best to choose.
 * requirements.txt - build requirements. See the build guide above.
 * vectorizer.pkl - a serialized version of a vectorizer object used in prediction.ipynb.
+
 Other
 * G2_report.pdf - a longer report explaining the goals and datasets in more detail, following CRISP-DM. (HW 10).
