@@ -16,7 +16,7 @@ YouTube currently stands as one of the most popular platforms for video content 
 3) Understand the temporal evolution of audience interests: we wanted to investigate which themes were popular during specific time periods.
 
 ### How to build and set project (with VSCode):
-**IMPORTANT NOTE: **The datasets are not included in the repository. You need to download the necessary files [from this source](https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset?select=US_youtube_trending_data.csv). The needed files are: US_category_id.json, US_youtube_trending_data.csv, GB_category_id.json, GB_youtube_trending_data.csv.
+**IMPORTANT NOTE:** The datasets are not included in the repository. You need to download the necessary files [from this source](https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset?select=US_youtube_trending_data.csv). The needed files are: US_category_id.json, US_youtube_trending_data.csv, GB_category_id.json, GB_youtube_trending_data.csv.
 
 1. Download the project and open the project folder with VSCode.
 2. Press Ctrl + Shift + P and type _"Python: Create Environment"_ (functionality was checked with Python 3.12.6)
