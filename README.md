@@ -1,5 +1,5 @@
 # Project G2: YOUTUBE TRENDS
-Analysing YouTube trends and training a video category prediction model
+Analyzing YouTube trends and training a video category prediction model
 
 ### TEAM:
 Timofei Šinšakov (Gr 7)<br>
@@ -16,7 +16,7 @@ YouTube currently stands as one of the most popular platforms for video content 
 3) Understand the temporal evolution of audience interests: we wanted to investigate which themes were popular during specific time periods.
 
 ### How to build and set project (with VSCode):
-**IMPORTANT NOTE:** The datasets are not included in the repository. You need to download the necessary files [from this source](https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset?select=US_youtube_trending_data.csv). The needed files are: US_category_id.json, US_youtube_trending_data.csv, GB_category_id.json, GB_youtube_trending_data.csv.
+**IMPORTANT NOTE:** The datasets are not included in the repository. You need to download the necessary files [from Kaggle](https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset?select=US_youtube_trending_data.csv). The needed files are: US_category_id.json, US_youtube_trending_data.csv, GB_category_id.json, GB_youtube_trending_data.csv.
 
 1. Download the project and open the project folder with VSCode.
 2. Press Ctrl + Shift + P and type _"Python: Create Environment"_ (functionality was checked with Python 3.12.6)
@@ -25,7 +25,7 @@ YouTube currently stands as one of the most popular platforms for video content 
 5. To be able to run the prediction app, run all cells from the prediction.ipynb file. It will take 5-10 minutes. It will create _random_forest_model.pkl_, which is necessary for running the application.
 6. Congratulations, you are all set!
 
-### Guide to the repo contents:
+### Guide to the contents of the repository:
 
 3 Jupyter notebooks, each corresponding to one goal (see goals above).
 * prediction.ipynb - a notebook where the prediction model was trained, tuned (for finding the best hyperparameters), and tested.
